@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CV | Trần Thị Kiều Trang – Bác sĩ thú y</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#ff7a18;
+  --secondary:#2ec4b6;
+  --bg:#fffaf4;
+  --card:#ffffff;
+  --text:#2d2d2d;
+}
+body.dark{
+  --bg:#1f2933;
+  --card:#2d3748;
+  --text:#f7fafc;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Nunito',sans-serif;}
+body{background:var(--bg);color:var(--text);overflow-x:hidden}
+
+/* ===== Toggle ===== */
+.toggle{
+  position:fixed;top:15px;right:15px;
+  background:var(--card);
+  padding:8px 14px;border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.2);
+  cursor:pointer;z-index:1000;
+}
+
+/* ===== ANIMAL ANIMATION ===== */
+.animal{
+  position:fixed;
+  font-size:2.2rem;
+  opacity:.25;
+  pointer-events:none;
+  z-index:0;
+}
+.run-x{animation:runX linear infinite;}
+.run-y{animation:runY linear infinite;}
+
+@keyframes runX{
+  from{left:-10%}
+  to{left:110%}
+}
+@keyframes runY{
+  from{top:-10%}
+  to{top:110%}
+}
+
+/* ===== Hero ===== */
+header{
+  min-height:100vh;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  position:relative;
+  z-index:1;
+}
+header h1{font-size:3.2rem;font-weight:800}
+header h2{margin:12px 0;font-weight:700}
+header p{max-width:650px;margin:auto}
+
+/* ===== Section ===== */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+  position:relative;
+  z-index:1;
+}
+section h3{
+  text-align:center;
+  font-size:2.2rem;
+  color:var(--primary);
+  margin-bottom:50px;
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,.1);
+  margin-bottom:25px;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+
+.info p{margin-bottom:10px;font-size:1rem}
+.info span{margin-right:8px}
+
+/* ===== Skills ===== */
+.skill{margin-bottom:18px}
+.bar{
+  background:#ffe8d6;
+  border-radius:10px;
+  margin-top:6px;
+  overflow:hidden;
+}
+.bar div{
+  height:12px;
+  width:0;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  transition:1.4s;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:#111827;
+  color:#fff;
+  text-align:center;
+  padding:30px 20px;
+  position:relative;
+  z-index:1;
+}
+footer a{color:#ffd166;text-decoration:none}
+
+@media(max-width:768px){
+  header h1{font-size:2.4rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleDark()">🌙 / ☀️</div>
+
+<!-- ===== ANIMATED ANIMALS ===== -->
+<div class="animal run-x" style="top:12%;animation-duration:24s">🐶</div>
+<div class="animal run-x" style="top:35%;animation-duration:30s">🐷</div>
+<div class="animal run-x" style="top:60%;animation-duration:26s">🐱</div>
+<div class="animal run-x" style="top:85%;animation-duration:34s">🐃</div>
+
+<div class="animal run-y" style="left:10%;animation-duration:32s">🐔</div>
+<div class="animal run-y" style="left:35%;animation-duration:28s">🦆</div>
+<div class="animal run-y" style="left:65%;animation-duration:30s">🐄</div>
+<div class="animal run-y" style="left:90%;animation-duration:26s">🐦</div>
+
+<header>
+  <div>
+    <h1>Trần Thị Kiều Trang</h1>
+    <h2>👩‍⚕️ Bác sĩ thú y</h2>
+    <p>
+      Yêu động vật – đam mê nghề thú y – định hướng phát triển bền vững
+      trong lĩnh vực chăm sóc và phòng trị bệnh cho vật nuôi.
+    </p>
+  </div>
+</header>
+
+<section>
+  <h3>Thông tin cá nhân</h3>
+  <div class="card info">
+    <p><span>🎂</span>14/01/2002</p>
+    <p><span>📞</span>0395 600 866</p>
+    <p><span>📧</span>tranthikieutrang.tv2002@gmail.com</p>
+    <p><span>📍</span>Tam Ngãi, Cầu Kè, Trà Vinh</p>
+  </div>
+</section>
+
+<section>
+  <h3>Mục tiêu nghề nghiệp</h3>
+  <div class="card">
+    <p><strong>🎯 Ngắn hạn:</strong> Áp dụng kiến thức thú y vào thực tế chăm sóc, phòng và điều trị bệnh cho vật nuôi.</p>
+    <p style="margin-top:10px"><strong>🚀 Dài hạn:</strong> Tích lũy kinh nghiệm, nâng cao chuyên môn và gắn bó lâu dài với nghề.</p>
+  </div>
+</section>
+
+<section>
+  <h3>Trình độ học vấn</h3>
+  <div class="card">
+    <p>🎓 <strong>Trường Đại học Cần Thơ</strong></p>
+    <p>Chuyên ngành: Thú y</p>
+    <p>09/2020 – 12/2024</p>
+  </div>
+</section>
+
+<section>
+  <h3>Kinh nghiệm làm việc</h3>
+  <div class="card">
+    <p><strong>🏢 Công ty TNHH TM SX Menon</strong> – Thực tập sinh</p>
+    <ul style="margin-left:18px;margin-top:10px">
+      <li>🐷 Chăm sóc heo nái, heo con</li>
+      <li>💉 Hỗ trợ điều trị bệnh</li>
+      <li>⭐ Tinh thần trách nhiệm và học hỏi tốt</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Kỹ năng</h3>
+  <div class="card">
+    <div class="skill">🗣️ Giao tiếp<div class="bar"><div data-width="85%"></div></div></div>
+    <div class="skill">💻 Tin học văn phòng<div class="bar"><div data-width="80%"></div></div></div>
+    <div class="skill">🌍 Tiếng Anh B1<div class="bar"><div data-width="65%"></div></div></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Trần Thị Kiều Trang – Bác sĩ thú y</p>
+  <p>📧 <a href="mailto:tranthikieutrang.tv2002@gmail.com">tranthikieutrang.tv2002@gmail.com</a></p>
+</footer>
+
+<script>
+function toggleDark(){
+  document.body.classList.toggle('dark');
+}
+const bars=document.querySelectorAll('.bar div');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.width=e.target.dataset.width;
+    }
+  });
+},{threshold:.6});
+bars.forEach(b=>observer.observe(b));
+</script>
+
+</body>
+</html>
